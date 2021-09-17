@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -38,6 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'students',
+    'trainer',
+    'event_calendar',
+    'course',
+    'core',
+    'api',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -120,7 +127,13 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATICFILES_DIR=[BASE_DIR/"static"]
+
+MEDIA_URL = '/images/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images/')
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+MEDIA_ROOT='(media)'

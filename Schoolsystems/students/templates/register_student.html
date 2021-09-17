@@ -1,28 +1,199 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student</title>
+    <title>Calendar</title>
 </head>
 <body>
     <form method="POST">
+        <h2>Registration form</h2>
+        {%csrf_token%}
         {{form.as_p}}
+      <button>Submit</button>
     </form>
 <style>
-    *{
-        box-sizing: border-box;
+    
+    /* body{
+ 
 
-    }
-    body{
-        background-color: rgb(154, 185, 146);
+        background-color: rgb(169, 224, 155);
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding-top: 5%;
     }
+    form{
+        background-color: rgb(130, 228, 106);
+        border-radius: 20px;
+       
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;      
+        padding-left: 30px;
+    }
+    input{
+        padding: 6px;
+        padding-left: 15px;
+        margin-left: 20px;
+        color: rgb(6, 31, 0);
+        border-radius: 10px;        
+    } */
+ 
+        h1{
+          text-align: center;
+      }
+        body{
+            background-color:#233;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color:purple;
+        }
+        input{
+           width: 100%;
+           outline: none;
+           border: 2px solid ;
+           font-size: 12px;
+           padding: 8px 8px;
+           border-radius: 20px;
+       }
+       select{
+           width: 100%;
+           padding: 8px 10px;
+           border-radius: 3px;
+           transition: all 0.3;
+       }
+       .wrapper{
+      max-width: 500px;
+      width: 80%;
+      background: wheat;
+      margin: 20px auto;
+      padding: 30px;
+      box-shadow: 1px 1px 2px rgba(0,0,0, 125);
+       }
+       .wrapper.form.inputfield{
+           margin-bottom: 15px;
+           display: flex;
+           align-items: center;
+       }
+       .wrapper.wrapper.form.input_field label{
+           width: 200px;
+           /* color: blueviolet; */
+           margin-right: 10px;
+           font-size: 14px;
+       }
+      button{
+          background-color:rgb(194, 149, 194);
+          top: 30px;
+          height: 50px;
+          width :50%;
+          border-radius: 6px;
+          align-items: center;
+          font-size: 1.4rem;
+      }
+      .pic{
+          background-size: contain;
+          width: 80%;
+          text-align: center;
+          /* height: 150px; */
+      }
+      button:hover{
+          color: wheat;
+          background-color: purple;
+          cursor: pointer;
+      }
+    </style>
 </style>
 </body>
 </html>
-
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="main.css">
+     <title>STUDENT'S INFORMATION</title>
+ </head>
+ <body>
+     <style>
+         h1{
+           text-align: center;
+       }
+         body{
+             background-color:#233;
+             align-items: center;
+             justify-content: center;
+             font-size: 20px;
+             color:purple;
+         }
+         input{
+            width: 100%;
+            outline: none;
+            border: 2px solid ;
+            font-size: 12px;
+            padding: 8px 8px;
+            border-radius: 20px;
+        }
+        select{
+            width: 100%;
+            padding: 8px 10px;
+            border-radius: 3px;
+            transition: all 0.3;
+        }
+        .wrapper{
+       max-width: 500px;
+       width: 80%;
+       background: wheat;
+       margin: 20px auto;
+       padding: 30px;
+       box-shadow: 1px 1px 2px rgba(0,0,0, 125);
+        }
+        .wrapper.form.inputfield{
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .wrapper.wrapper.form.input_field label{
+            width: 200px;
+            /* color: blueviolet; */
+            margin-right: 10px;
+            font-size: 14px;
+        }
+       button{
+           background-color:rgb(194, 149, 194);
+           top: 30px;
+           height: 50px;
+           width :50%;
+           border-radius: 6px;
+           align-items: center;
+           font-size: 1.4rem;
+       }
+       .pic{
+           background-size: contain;
+           width: 80%;
+           text-align: center;
+           /* height: 150px; */
+       }
+       button:hover{
+           color: wheat;
+           background-color: purple;
+           cursor: pointer;
+       }
+     </style>
+    <div class="wrapper">
+        <div class="form">
+     <form method="POST">
+         <h1>STUDENT'S FORM </h1>
+         {%csrf_token%}
+         {{form.as_p}}
+         <button>Submit</button>
+     </form>
+     </div>
+     </div>
+     <div class="div"></div>
+     <div id="div"></div>
+ </body>
+ </html>

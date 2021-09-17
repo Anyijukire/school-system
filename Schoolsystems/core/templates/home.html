@@ -1,0 +1,77 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+
+<body>
+    <nav>
+        <a href="{% url 'register_student'%}">Student</a>
+        <a href="{% url 'register_trainer'%}">Trainer</a>
+        <a href="{% url 'register_course'%}">Courses</a>
+        <a href="{% url 'event_list'%}">Calendar</a>
+    </nav>
+    <h3>Students: {{studentss}}</h3>
+    <h3>Trainers: {{trainers}}</h3>
+    <h3>Courses: {{courses}}</h3>
+    <h3>Events: {{events}}</h3>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Homepage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+       body{
+         background-image: url("https://images.pexels.com/photos/5331202/pexels-photo-5331202.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+         background-repeat: no-repeat;
+background-size: cover;
+        }
+.home {
+  /* overflow: hidden; */
+  background-color: rgb(82, 163, 125);
+  position: fixed;
+  height: 10%;
+  top: 0;
+  width: 100%;
+}
+.home a {
+  float: right;
+  margin-right: 2%;
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+.home a:hover {
+  color:white;
+}
+.hh{
+    margin-top: 10%;
+    text-align: center;
+    color: rgb(52, 27, 58);
+}
+.img{
+    margin-top: 5%;
+    
+}
+    </style>
+</head>
+<body>
+    <nav class="home">
+        <a href="{% url 'student_list'%}">Student</a>
+        <a href="{% url 'trainer_list'%}">Trainer</a>
+        <a href="{% url 'course_list'%}">Courses</a>
+        <a href="{% url 'calendar'%}">Calendar</a>
+   </nav>
+   <img class="img" src="https://akirachix.com/img/logo.png?_cchid=1660c557f83aa4644e2a8d4bf0ddd4fb">
+   <h1 class="hh">Hello there welcome to AkiraChix It's great to have you here. <br>Feel free to sign up with us</h1>
+        <!-- https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwyrh1NnysvCOQrXG_I3UNpcCSCM-ZdMdYig&usqp=CAU" class="d-block w-100" alt="..." -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>

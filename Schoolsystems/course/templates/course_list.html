@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course list</title>
+</head>
+<body>
+    <table id="tab">
+        <tr><th> Unit name </th><th>Duration</th> <th>Trainer's name</th> <th>Code</th> <th>Material</th></tr>
+        {%for course in coursess%}
+        <tr>
+            <td>
+                {{course.unit_name}}
+            </td>
+            <td>
+                {{course.duration}}
+            </td>
+            <td>{{course.trainers_name}}</td>
+            <td>{{course.unit_code}}</td>
+            <td>{{course.course_material}}</td>
+
+        </tr>
+        {%endfor%}
+    </table>
+    <style>
+ #tab {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#tab td, #tab th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#tab tr:nth-child(even){background-color: #f2f2f2;}
+
+#tab tr:hover {background-color: #ddd;}
+
+#tab th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(138, 199, 77);
+  color: white;
+}
+body{
+   background-color: rgb(241, 252, 230);
+}
+    </style>
+</body>
+</html>
+<!-- 
+    <img src="{{student.profile_pic.url}}">
+    <a href="{{trainer.resume.url}}"> Resume</a>
+    from datetime import datetime
+    today = datetime.today()
+    events = Event.objects.filter(date=today)
+ -->
